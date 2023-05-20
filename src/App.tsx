@@ -12,7 +12,6 @@ const App = () => {
 
   const searchForLocation = async (): Promise<void> => {
     const URL: string = `https://api.openweathermap.org/data/2.5/weather?q=${locationInput}&appid=${process.env.REACT_APP_API_KEY}&units=metric`;
-
     getWeather(setWeatherData, setIcon, setLocationNotFound, URL);
   };
 
